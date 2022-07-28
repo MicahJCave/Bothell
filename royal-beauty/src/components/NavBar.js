@@ -3,6 +3,8 @@ import StyleSheet from 'react'
 const NavBar = () => {
   const styles = {
     color: 'white',
+    paddingLeft: 20,
+    fontSize: 20,
   }
 
   return (
