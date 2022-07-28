@@ -1,11 +1,17 @@
-function NavBar() {
+import StyleSheet from 'react'
+
+const NavBar = () => {
+  const styles = {
+    color: 'white',
+  }
+
   return (
     <div>
       <div>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              Navbar
+            <a style={styles} class="navbar-brand" href="#">
+              Royal Beauty
             </a>
             <button
               class="navbar-toggler"
@@ -21,22 +27,24 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                  <a
+                    style={styles}
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                  >
                     Home
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    Features
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a style={styles} class="nav-link" href="#">
                     Pricing
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
+                  <a style={styles} class="nav-link" href="#">
+                    About
+                  </a>
                 </li>
               </ul>
             </div>
