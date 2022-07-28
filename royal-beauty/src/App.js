@@ -1,9 +1,11 @@
-
+import { NavBar } from './components/NavBar'
 
 function App() {
   return (
-    "hello world"
-  );
+    <div>
+      <div>{NavBar}</div>
+    </div>
+  )
 }
 
-export default App;
+export default App
